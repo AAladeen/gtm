@@ -1,0 +1,37 @@
+
+
+<!-- IMPORTANT for mobile WebView -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+<h2>ServiceNow Engagement Messenger – GTM07 - Guest</h2>
+
+
+
+
+<script src="https://elitegamingsupportstg.service-now.com/scripts/sn_csm_ec.js?v=5.6"></script>
+<script>
+SN_CSM_EC.init({
+	moduleID: "https://elitegamingsupportstg.service-now.com/#37bb19f1fb2f7a100a3cf2896eefdc6c",
+	loadFeature: startChat()
+});
+
+function startChat(){ 
+
+return { 
+		feature: "CHAT",
+		openOnLoad: false,
+		params: { 
+			"topic_id": "96df9f012ba3b2100dfaf4a4d891bf7e", 
+			"language": "de",
+			"sysparm_brand":"wl-222", //grab brand from url
+			"sysparm_email":"",
+            "sysparm_first_name":"" 
+
+			
+			} 
+	  } 
+}
+
+
+	
+</script>
